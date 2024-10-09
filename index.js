@@ -22,8 +22,8 @@ let book={
     PublishedYear: 2020,
     Genre: "Programming",
 }
-//console.log(book.Title);
-//console.log(book['PublishedYear']);
+const title = book.Title;
+const publishedYear = book["PublishedYear"];
 
 
 /*****************************************************************
@@ -37,9 +37,14 @@ Task 4) The book has been assigned an ISBN number. Add a property 'ISBN' with a 
         
 Task 5) Modify the 'publishedYear' to 2021 as a new edition has been released.
 ******************************************************************/
-
+//Task 3
 book.pageCount=1096;
+
+//Task 4
 book.ISBN="978-1491952023";
+
+//Task 5
+book.PublishedYear = 2021;
 
 //console.log(book.pageCount);
 //console.log(book.ISBN);
@@ -57,12 +62,16 @@ Task 7) Add a 'reviews' property to the 'book' object, which will store an array
         Start with one review: {reviewer: "Book Critic", comment: "A comprehensive guide to JavaScript."}.
 ******************************************************************/
 
-book.Author=["David Flanagan","Another Author"];
+//Task 6
+book.Author = ["David Flanagan", "Another Author"];
 //console.log(book.Author)
 
-book.reviews={
-    reviewer: "Book Critic", 
-    comment: "A comprehensive guide to JavaScript."
-}
+//Task 7
+book.reviews = [
+  {
+    reviewer: "Book Critic",
+    comment: "A comprehensive guide to JavaScript.",
+  },
+];
 
-//console.log(book.reviews.comment);
+//console.log(book.reviews[0]);
